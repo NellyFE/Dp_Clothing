@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <title>Dp_clothing</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="relative container mx-auto md:ml-32 py-2 px-4">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div>
+          <img src="image/Photoroom-20250203_163608.png" alt="" class="w-28" />
+        </div>
+
+        <!-- Menu items -->
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#hero" id="Home"
+            class="font-semibold border-solid border-b border-transparent hover:border-darkBlue"
+            >Home</a
+          >
+          <a
+            href="#about-us"
+            class="font-semibold border-solid border-b border-transparent hover:border-darkBlue"
+            >About</a
+          >
+
+          <a
+            href="#sliddcontainer"
+            class="font-semibold border-solid border-b border-transparent hover:border-darkBlue"
+            >Lookbook</a
+          >
+
+          <a
+            href="#cta"
+            class="font-semibold border-solid border-b border-transparent hover:border-darkBlue"
+            >Shop</a
+          >
+        </div>
+
+        <!-- Button -->
+
+        <a
+          href="https://wa.link/in9146"
+          class="hidden md:block p-3 px-6 pt-2 text-white bg-darkBlue font-semibold hover:bg-transparent hover:transition border-2 hover:text-[black] hover:border-darkBlue"
+          >Contact Us
+        </a>
+
+        <!-- Hamburger icon-->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu  -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#hero">Home</a>
+          <a href="#about-us">About</a>
+          <a href="#sliddcontainer">Lookbook</a>
+          <a href="#cta">Shop</a>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Hero -->
+    <section
+      id="hero"
+      class="relative flex flex-col z-10 items-center justify-center border border-solid border-violet-900 bg-[url('/image/collection.jpg')] bg-no-repeat bg-cover"
+    >
+      <!-- Flex container -->
+      <div class="justify-center items-center text-center z-5 text-[white]">
+        <h1
+          class="relative text-5xl md:text-6xl sm:text-4xl font-bold text-center z-10"
+        >
+          Luxury Stitches, <br />
+          Tailored for Every Occasion
+        </h1>
+        <p class="my-7 text-lg z-10 relative px-4 md:px-80">
+          From everyday wear to special moments, our handmade pieces are crafted
+          to make you feel confident, elegant, and uniquely you.
+        </p>
+      </div>
+
+      <!-- Button -->
+
+      <a
+        href="#services"
+        class="relative z-10 md:block p-3 px-6 pt-2 mt-12 text-white bg-transparent font-semibold hover:bg-darkBlue hover:transition border-2 hover:border-darkBlue"
+        >Explore Our Services
+      </a>
+
+      <div class="overlay"></div>
+    </section>
+
+    <!-- About us -->
+    <section
+      id="about-us"
+      class="relative bg-gray-100 py-16 px-6 md:px-16 lg:px-24"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-12"
+      >
+        <!-- Image Section -->
+        <div class="w-full md:w-1/2">
+          <img
+            src="image/dp img6.jpg"
+            alt="Tailoring Workshop"
+            class="rounded"
+          />
+        </div>
+
+        <!-- Text Section -->
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <h2 class="text-4xl font-bold text-darkBlue mb-4">About Us</h2>
+          <p class="text-lg text-gray-600 mb-6">
+            <b>At Dp Clothing,</b> we believe fashion is more than just
+            clothing. It’s a statement of identity, confidence, and culture.
+            Rooted in the rich heritage of Nigerian tailoring, we blend
+            traditional craftsmanship with contemporary designs to create
+            bespoke, high-quality pieces.
+          </p>
+          <p class="text-lg text-gray-600 mb-6">
+            Every stitch, fabric choice, and detail reflects our commitment to
+            <b>excellence, elegance, and individuality</b>. Whether you need a
+            custom-made outfit for special occasions or a ready-to-wear piece,
+            our designs ensure you step out in style effortlessly.
+          </p>
+          <p class="text-lg text-gray-600 mb-6">
+            Based in Nigeria, we take pride in our roots, using the finest
+            fabrics and expert tailoring techniques to bring fashion dreams to
+            life while making every client feel confident and extraordinary.
+          </p>
+          <a
+            href="#cta"
+            class="bg-darkBlue text-white px-6 py-2 font-semibold shadow-md hover:bg-transparent hover:text-darkBlue transition bg-darkBlue font-semibold hover:bg-transparent hover:transition border-2 hover:border-darkBlue"
+            >Shop Our Collection</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Our services Section -->
+
+    <section id="services">
+      <!-- service container -->
+
+      <div class="flex flex-col mx-2 p-8">
+        <div class="flex w-full items-center justify-center py-6">
+          <h2 class="font-bold text-darkBlue text-4xl">Our Services</h2>
+        </div>
+
+        <!-- flex container -->
+
+        <div class="flex flex-col md:flex-row justify-between gap-6 py-6">
+          <!-- flexBox1 -->
+
+          <div
+            class="flex flex-col card1 w-full md:w-1/4 shadow-md rounded pb-2 hover:bg-veryLightGray"
+          >
+            <!-- Image container -->
+
+            <div class="">
+              <img
+                src="image/dp img27.jpg"
+                alt=""
+                class="h-72 md:h-64 object-cover w-full rounded-tl-sm rounded-tr-sm"
+              />
+            </div>
+
+            <!-- Text Container -->
+
+            <div class="flex flex-col">
+              <h4 class="font-bold mt-2 mx-2 text-gray-800">
+                Custom Tailoring
+              </h4>
+              <p class="m-2 text-gray-800">
+                Our custom tailoring service is designed to provide you with
+                perfectly fitted garments. Each piece is created to your exact
+                measurements, ensuring both comfort and style.
+              </p>
+            </div>
+
+            <div class="flex m-2">
+              <!-- Button -->
+
+              <a
+                href="https://wa.link/0selbv"
+                class="bg-darkBlue text-white px-6 py-2 font-semibold shadow-md hover:bg-transparent hover:text-darkBlue transition bg-darkBlue font-semibold hover:bg-transparent hover:transition border-2 hover:border-darkBlue"
+                >Book your fitting
+              </a>
+            </div>
+          </div>
+
+          <!-- flexBox2 -->
+          <div
+            class="flex flex-col card1 w-full md:w-1/4 shadow-md rounded pb-2 hover:bg-veryLightGray"
+          >
+            <!-- Image container -->
+
+            <div class="">
+              <img
+                src="image/dp img12.jpg"
+                alt=""
+                class="h-64 w-full object-cover rounded-tl-sm rounded-tr-sm"
+              />
+            </div>
+
+            <!-- Text Container -->
+
+            <div class="flex flex-col">
+              <h4 class="font-bold mt-2 mx-2 text-gray-800">
+                Ready-to-wear Collections
+              </h4>
+              <p class="m-2 text-gray-800">
+                Browse our exclusive ready-to-wear collections, carefully
+                crafted for modern fashion lovers. Each piece combines the
+                latest trends with timeless elegance, ensuring you always look
+                your best.
+              </p>
+            </div>
+
+            <div class="flex m-2">
+              <!-- Button -->
+
+              <a
+                href="https://wa.link/6gqo8v"
+                class="bg-darkBlue text-white px-6 py-2 font-semibold shadow-md hover:bg-transparent hover:text-darkBlue transition bg-darkBlue font-semibold hover:bg-transparent hover:transition border-2 hover:border-darkBlue"
+                >Shop now
+              </a>
+            </div>
+          </div>
+
+          <!-- flexBox3 -->
+          <div
+            class="flex flex-col card1 w-full md:w-1/4 shadow-md rounded pb-2 hover:bg-veryLightGray"
+          >
+            <!-- Image container -->
+
+            <div class="">
+              <img
+                src="image/dp img10.jpg"
+                alt=""
+                class="h-64 w-full object-cover rounded-tl-sm rounded-tr-sm"
+              />
+            </div>
+
+            <!-- Text Container -->
+
+            <div class="flex flex-col">
+              <h4 class="font-bold mt-2 mx-2 text-gray-800">
+                Design Consultation
+              </h4>
+              <p class="m-2 text-gray-800">
+                Our design consultation service is perfect for those looking to
+                create unique, personalized pieces. We work closely with you to
+                bring your style ideas to life, offering expert advice on
+                fabric, cut, and design.
+              </p>
+            </div>
+
+            <div class="flex m-2">
+              <!-- Button -->
+
+              <a
+                href="https://wa.link/70anvc"
+                class="bg-darkBlue text-white px-6 py-2 font-semibold shadow-md hover:bg-transparent hover:text-darkBlue transition bg-darkBlue font-semibold hover:bg-transparent hover:transition border-2 hover:border-darkBlue"
+                >Schedule consultation
+              </a>
+            </div>
+          </div>
+
+          <!-- flexBox4 -->
+          <div
+            class="flex flex-col card1 w-full md:w-1/4 shadow-md rounded pb-2 hover:bg-veryLightGray"
+          >
+            <!-- Image container -->
+
+            <div class="">
+              <img
+                src="image/materials.jpg"
+                alt=""
+                class="h-64 w-full object-cover rounded-tl-sm rounded-tr-sm"
+              />
+            </div>
+
+            <!-- Text Container -->
+
+            <div class="flex flex-col">
+              <h4 class="font-bold mt-2 mx-2 text-gray-800">
+                Bulk & Group Orders
+              </h4>
+              <p class="m-2 text-gray-800">
+                We specialize in bulk and group orders for events,
+                organizations, and special occasions. From weddings to corporate
+                wear, we ensure each order is completed with consistency and
+                precision.
+              </p>
+            </div>
+
+            <div class="flex m-2">
+              <!-- Button -->
+
+              <a
+                href="https://wa.link/n3g00t"
+                class="bg-darkBlue text-white px-6 py-2 font-semibold shadow-md hover:bg-transparent hover:text-darkBlue transition bg-darkBlue font-semibold hover:bg-transparent hover:transition border-2 hover:border-darkBlue"
+                >Request a quote
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery section -->
+
+    <section class="justify-center py-2" id="sliddcontainer">
+      <h2 class="font-bold text-4xl text-center text-darkBlue">Our Lookbook</h2>
+      <p class="text-center px-2">
+        From elegantly crafted pieces to our clients showcasing their unique
+        styles.
+      </p>
+
+      <p class="text-center">
+        Explore the beauty of fine tailoring in every frame.
+      </p>
+      <!-- swiper flex container -->
+
+      <div class="swipp flex mx-6 ml-6 gap-4 p-6 justify-center">
+        <div class="swiper mySwiper w-3/5 md:w-1/2 mx-auto">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img16.jpg"
+                alt="Slide 1"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img17.jpg"
+                alt="Slide 2"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img18.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img23.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="block md:!hidden swiper-slide">
+              <img
+                src="/image/dp img38.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img19.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img20.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img21.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img24.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img31.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img22.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img30.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img25.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img33.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img32.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img26.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="/image/dp img35.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="block md:!hidden swiper-slide">
+              <img
+                src="/image/dp img37.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="block md:!hidden swiper-slide">
+              <img
+                src="image/dp img3.jpg"
+                alt="Slide 3"
+                class="w-full !h-[600px] rounded-lg shadow-md"
+              />
+            </div>
+
+            <div class="block md:!hidden swiper-slide">
+              <img
+                src="/image/dp img36.jpg"
+                alt="Slide 3"
+                class="w-full rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+
+          <!-- Pagination Dots -->
+          <div class="swiper-pagination !text-darkBlue hidden md:block"></div>
+
+          <!-- Navigation Buttons -->
+          <div class="swiper-button-next !text-darkBlue"></div>
+          <div class="swiper-button-prev !text-darkBlue"></div>
+        </div>
+
+        <!-- image side 2 -->
+        <div
+          class="carontaine flex flex-col w-2/5 md:w-1/2 border-darkBlue border-violet-900"
+        >
+          <!-- img1 -->
+          <div class="flex h-1/4 w-full">
+            <img
+              src="image/dp img14.jpg"
+              alt=""
+              class="w-full md:w-1/3 rounded object-cover"
+            />
+          </div>
+
+          <div class="flex h-1/4 w-full">
+            <img
+              src="image/dp img1.jpg"
+              class="w-full md:w-1/3 rounded object-cover"
+              alt=""
+            />
+          </div>
+
+          <div class="flex h-1/4 w-full">
+            <img
+              src="image/dp img13.jpg"
+              alt=""
+              class="w-full md:w-1/3 rounded object-cover"
+            />
+          </div>
+
+          <div class="flex h-1/4 w-full">
+            <img
+              src="image/dp img9.jpg"
+              alt=""
+              class="w-full md:w-1/3 rounded object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us section -->
+    <section>
+      <!-- Choose flex container -->
+      <div class="flex flex-col mx-2 px-8 py-14 space-y-8">
+        <!-- top choose us -->
+
+        <div class="flex flex-col md:flex-row gap-6">
+          <div
+            class="flex flex-col text-center w-full md:w-1/3 md:pl-6 md:py-4 rounded bg-brightshade"
+          >
+            <h2 class="font-bold text-3xl md:text-4xl mb-2">Why Choose Us?</h2>
+
+            <p class="text-darkGrayishBlue">
+              We’re all about quality, reliability, and creativity, making sure
+              you get the best.
+            </p>
+
+            <p class="text-darkGrayishBlue mt-2">Here’s why we stand out:</p>
+          </div>
+          <!-- Numbered list -->
+
+          <!-- List Item 1 -->
+          <div
+            class="flex flex-col space-y-3 w-full md:w-1/3 md:space-y-0 md:space-x-6 md:flex-row px-2 py-2 hover:bg-brightshade rounded"
+          >
+            <!-- Heading -->
+
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 md:py-1 text-brightRed text-4xl font-bold"
+                >
+                  01
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Premium Craftsmanship
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Premium Craftmanship
+              </h3>
+              <p class="text-darkGrayishBlue">
+                We take pride in expert craftsmanship, with each garment
+                carefully made by skilled artisans using top-quality materials.
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 2 -->
+          <div
+            class="flex flex-col space-y-3 w-full md:w-1/3 md:space-y-0 md:space-x-6 md:flex-row px-2 py-2 hover:bg-brightshade rounded"
+          >
+            <!-- Heading -->
+
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 md:py-1 text-brightRed text-4xl font-bold"
+                >
+                  02
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Custom-Fitted Perfection
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Custom-Fitted Perfection
+              </h3>
+              <p class="text-darkGrayishBlue">
+                We offer custom tailoring to ensure every piece fits perfectly,
+                flattering your shape and giving you a personalized look.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom choose us -->
+
+        <div class="flex flex-col md:flex-row gap-6">
+          <!-- List Item 3 -->
+          <div
+            class="flex flex-col space-y-3 w-full md:w-1/3 md:space-y-0 md:space-x-6 md:flex-row px-2 py-2 hover:bg-brightshade rounded"
+          >
+            <!-- Heading -->
+
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 md:py-1 text-brightRed text-4xl font-bold"
+                >
+                  03
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Unique & Timeless Design
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Unique & Timeless Design
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Our designs blend classic elegance with fresh ideas to create
+                pieces that are unique and timeless, offering style that lasts.
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 4 -->
+          <div
+            class="flex flex-col space-y-3 w-full md:w-1/3 md:space-y-0 md:space-x-6 md:flex-row px-2 py-2 hover:bg-brightshade rounded"
+          >
+            <!-- Heading -->
+
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 md:py-1 text-brightRed text-4xl font-bold"
+                >
+                  04
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Fast & Relaible Delivery
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Fast & Reliable Delivery
+              </h3>
+              <p class="text-darkGrayishBlue">
+                We ensure fast and reliable delivery, so you can trust that your
+                order will arrive on time and in perfect condition.
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 3 -->
+          <div
+            class="flex flex-col space-y-3 w-full md:w-1/3 md:space-y-0 md:space-x-6 md:flex-row px-2 py-2 hover:bg-brightshade rounded"
+          >
+            <!-- Heading -->
+
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 md:py-1 text-brightRed text-4xl font-bold"
+                >
+                  05
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Exceptional Customer Service
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Exceptional Customer Service
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Your satisfaction is our priority. Our friendly team is always
+                here to assist you, providing a smooth and enjoyable experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="bg-brightRed">
+      <div
+        class="container flex flex-col items-center justify-between px-6 py-12 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+      >
+        <!-- heading -->
+        <h2
+          class="text-3xl md:text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left"
+        >
+          Upgrade Your Style with Effortless Fashion Today.
+        </h2>
+
+        <!-- button -->
+        <div>
+          <a
+            href="https://wa.link/6gqo8v"
+            class="font-semibold p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-darkBlue"
+            >Shop Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-veryDarkBlue">
+      <!-- flex container -->
+
+      <div
+        class="flex flex-col-reverse md:flex-row mx-4 md:mx-40 py-6 "
+      >
+        <!-- logo and social links container -->
+
+        <!-- the flex for the media screen -->
+        <div class="flex gap-36 sm:w-full md:w-1/2">
+          <div
+            class="flex items-center justify-between space-y-4 flex-col md:space-y-0 md:items-start"
+          >
+            <!-- logo -->
+            <div class="flex">
+              <img
+                src="./image/Photoroom-20250203_163608.png"
+                class="h-16"
+                id="logoi"
+                alt="logo"
+              />
+            </div>
+
+            <!-- social links container-->
+            <div class="flex justify-center space-x-4">
+              <!-- Link 1 -->
+              <a href="https://www.facebook.com/share/1F8akdW9Ky/">
+                <img src="./image/icon-facebook.svg" alt="" class="h-8" />
+              </a>
+
+              <!-- Link 2 -->
+              <a href="https://www.instagram.com/dp_clothing_001?igsh=MXR5aGx2ZnM3dWtwNw==">
+                <img src="./image/icon-instagram.svg" alt="" class="h-8" />
+              </a>
+            </div>
+          </div>
+
+          <!-- List container -->
+          <div class="flex justify-around">
+            <div class="flex flex-col space-y-3 text-white">
+              <a href="#" class="hover:text-brightRed">Home</a>
+              <a href="#sliddcontainer" class="hover:text-brightRed">Lookbook</a>
+              <a href="https://wa.link/in9146" class="hover:text-brightRed">Contact Us</a>
+              <a href="#about-us" class="hover:text-brightRed">About Us</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input container -->
+        <div class="flex flex-col px-2 md:px-6 space-y-8 mb-6 md:mb-0 ">
+          <div class="flex items-center gap-2 text-white">
+            <i class="fa-regular fa-envelope"></i>
+            <p>dpclothing01@gmail.com</p>
+          </div>
+
+          <div class="flex text-white items-center gap-2">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>20 Enugu Road GRA Onitsha, Anambra State.</p>
+          </div>
+          <div class="hidden text-white md:block">
+            <i
+              >Copyright &copy; 2025, All Rights Reserved. | Designed by NellyFE
+            </i>
+          </div>
+        </div>
+      </div>
+
+      <div class="block text-white text-center md:hidden">
+        <p >
+          <i class="!text-xxs"
+            >Copyright &copy; 2025, All Rights Reserved. | Designed by NellyFE
+          </i>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
