@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding:0;
+}
+
 
 #hero{
     height: 87vh;
@@ -106,6 +112,8 @@ html {
   /* *{
     outline: 1px solid red;
   } */
+
+  
 
   @media (max-width:768px) {
     .swipp{

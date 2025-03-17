@@ -1,8 +1,10 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".mySwiper", {
-    slidesPerView: 1,
+    slidesPerView: 1, // Default for mobile
     spaceBetween: 20,
     loop: true,
+    loopAdditionalSlides: 5, // Helps looping behavior
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -17,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
 
 //Hamburger
 const btn = document.getElementById("menu-btn");
