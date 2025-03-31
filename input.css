@@ -113,10 +113,10 @@ body {
     outline: 1px solid red;
   } */
 
-  body{
-    max-width: 1400px;
-  }
+#about-us{
+  max-width: 1200px;
 
+}
   @media (max-width:768px) {
     .swipp{
       height: 90vh;
