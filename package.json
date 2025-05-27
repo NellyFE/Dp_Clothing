@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "build": "npx tailwindcss -i ./input.css -o ./css/main.css",
-  "watch": "npx tailwindcss -i ./input.css -o ./css/main.css --watch"
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -17,4 +17,3 @@
     "swiper": "^11.2.5"
   }
 }
-
